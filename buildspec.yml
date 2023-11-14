@@ -11,8 +11,8 @@ phases:
     commands:
       - echo build Docker image on `date`
       - cd src
-      - docker build -t <image name>:latest .
-      - docker tag <image name>:latest <ECR repository URI>:latest
+      - docker build -t s2-g4-img:latest .
+      - docker tag s2-g4-img:latest https://962804699607.dkr.ecr.us-west-2.amazonaws.com/s2-g4-repo:latest
   post_build:
     commands:
       - echo build Docker image complete `date`
