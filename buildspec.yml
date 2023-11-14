@@ -10,7 +10,6 @@ phases:
   build:
     commands:
       - echo build Docker image on `date`
-      - cd src
       - docker build -t s2-g4-repo .
       - docker tag s2-g4-repo:latest 962804699607.dkr.ecr.us-west-2.amazonaws.com/s2-g4-repo:latest
   post_build:
