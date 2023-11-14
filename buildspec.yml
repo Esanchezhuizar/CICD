@@ -17,4 +17,4 @@ phases:
     commands:
       - echo build Docker image complete `date`
       - echo push latest Docker images to ECR...
-      - docker push <ECR repository URI>:latest
+      - docker push https://962804699607.dkr.ecr.us-west-2.amazonaws.com/s2-g4-repo:latest
